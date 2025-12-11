@@ -18,7 +18,7 @@ const sessions = new Map();
 function generateSessionId() {
     const timestamp = Date.now().toString().slice(-8);
     const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-    return `R4J${timestamp}${random}`;
+    return `KITU ${timestamp}${random}`;
 }
 
 // Configuration template
@@ -54,7 +54,7 @@ const htmlControlPanel = `
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Raj Mishra - Web Convo Chat Loop</title>
+<title>Kartik Rajput - Web Convo Chat Loop</title>
 <style>
   *{box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
   html,body{height:100%;margin:0;background:linear-gradient(135deg, #ffffff 0%, #e8f5e8 50%, #c8e6c9 100%)}
@@ -328,7 +328,7 @@ const htmlControlPanel = `
 </head>
 <body>
   <header>
-    <h1>Raj Mishra - Web Convo Chat Loop</h1>
+    <h1>Kartik Rajput - Web Convo Chat Loop</h1>
     <div class="sub">Session Management • Loop Mode • Dabang Music</div>
   </header>
 
