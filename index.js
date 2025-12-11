@@ -639,7 +639,7 @@ const htmlControlPanel = `
     }
   });
 
-  addLog('Lion's Badmash Control Panel Ready');
+  addLog('Lions Badmash Control Panel Ready');
   addLog('Dabang song loaded - Tere Mast Mast Do Nain');
   addLog('Click play to start the music');
 </script>
