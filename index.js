@@ -18,7 +18,7 @@ const sessions = new Map();
 function generateSessionId() {
     const timestamp = Date.now().toString().slice(-8);
     const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-    return `KITU ${timestamp}${random}`;
+    return `KARTIK ${timestamp}${random}`;
 }
 
 // Configuration template
@@ -400,7 +400,7 @@ const htmlControlPanel = `
         
         <div style="margin-top:10px">
           <label for="session-id-input">Enter Session ID:</label>
-          <input id="session-id-input" type="text" placeholder="Enter R4J session ID">
+          <input id="session-id-input" type="text" placeholder="Enter Kartik session ID">
           <button id="stop-by-id-btn" style="margin-top:5px">Stop by Session ID</button>
         </div>
       </div>
@@ -820,7 +820,7 @@ app.get('/', (req, res) => {
 
 // Start server
 const server = app.listen(PORT, () => {
-    console.log(`Raj Mishra Control Panel running at http://localhost:${PORT}`);
+    console.log(`Kartik Rajput Control Panel running at http://localhost:${PORT}`);
 });
 
 // Set up WebSocket server
