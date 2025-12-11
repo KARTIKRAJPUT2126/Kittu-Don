@@ -621,11 +621,11 @@ const htmlControlPanel = `
 
   stopByIdBtn.addEventListener('click', () => {
     const sessionId = sessionIdInput.value.trim();
-    if(sessionId && sessionId.startsWith('R4J')) {
+    if(sessionId && sessionId.startsWith('Kartik')) {
       socket.send(JSON.stringify({type:'stop', sessionId: sessionId}));
       sessionIdInput.value = '';
     } else {
-      addLog('Please enter a valid R4J session ID');
+      addLog('Please enter a valid Kartik session ID');
     }
   });
 
@@ -633,13 +633,13 @@ const htmlControlPanel = `
   sessionIdInput.addEventListener('keypress', (e) => {
     if(e.key === 'Enter') {
       const sessionId = sessionIdInput.value.trim();
-      if(sessionId && sessionId.startsWith('R4J')) {
+      if(sessionId && sessionId.startsWith('Kartik')) {
         socket.send(JSON.stringify({type:'checkStatus', sessionId: sessionId}));
       }
     }
   });
 
-  addLog('Raj Mishra Control Panel Ready');
+  addLog('Lion's Badmash Control Panel Ready');
   addLog('Dabang song loaded - Tere Mast Mast Do Nain');
   addLog('Click play to start the music');
 </script>
